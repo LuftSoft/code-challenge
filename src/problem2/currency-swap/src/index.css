@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ba03de;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.option-wrapper {
+  display: flex; /* Allow image and text to appear side-by-side */
+  align-items: center; /* Vertically align image and text */
+}
+
+.option-wrapper img {
+  margin-right: 5px; /* Add spacing between image and text */
+  width: 20px; /* Adjust image size as needed */
+  height: 20px;
+}
+.d-flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 0.5rem;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.mb-1 {
+  margin-bottom: 0.3rem;
+}
+
+.border {
+  border-radius: 5px;
+  border: 1.5px solid #aeaeae;
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.select-selected {
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.select-selected > div {
+  gap: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.select-selected::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  rotate: -45deg;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  z-index: 99;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.select-items div {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.select-items div img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.select-items div:hover {
+  background-color: #f1f1f1;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.content-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
